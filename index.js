@@ -7,13 +7,19 @@ function initMap() {
   });
 
   for (let key in restaurants) {
-    console.log(key);
     let marker = new google.maps.Marker({
       position: restaurants[key].position,
       map: map
     });
 
-    let contentString = '<p>' + key + '<br>' + restaurants[key].cost + '<br>' + restaurants[key].distinction + '</p>';
+    let contentString =
+      "<p>" +
+      key +
+      "<br>" +
+      restaurants[key].cost +
+      "<br>" +
+      restaurants[key].distinction +
+      "</p>";
 
     let infoWindow = new google.maps.InfoWindow({
       content: contentString
