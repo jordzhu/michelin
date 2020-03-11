@@ -6,23 +6,21 @@ function initMap() {
     clickableIcons: false
   });
 
-  let markers = [];
-
   for (let key in restaurants) {
+    console.log(key);
     let marker = new google.maps.Marker({
       position: restaurants[key].position,
-      map: map,
-      cursor: true
+      map: map
     });
 
+    let contentString = '<p>' + key + '<br>' + restaurants[key].cost + '<br>' + restaurants[key].distinction + '</p>';
+
     let infoWindow = new google.maps.InfoWindow({
-      content: key
+      content: contentString
     });
 
     marker.addListener("click", () => {
       infoWindow.open(map, marker);
     });
-
-    markers.push();
   }
 }
