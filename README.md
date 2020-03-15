@@ -7,14 +7,14 @@ This map gives an easy way to locate all Michelin Guide 2020 restaurants in NYC.
 
 Yelp uses this guide:
 
-$: Under $10
-$$: $11-30
-$$$: $31-60
+$: Under $10<br/>
+$$: $11-30<br/>
+$$$: $31-60<br/>
 $$$$: $61+
 
 This is for NYC, so under $10 basically limits you to Chinese takeout, Halal cart, or deli food. Instead, I am using the following:
 
-$: Under $15
-$$: $16-50
-$$$: $51-80
+$: Under $15<br/>
+$$: $16-50<br/>
+$$$: $51-80<br/>
 $$$$: $81+
